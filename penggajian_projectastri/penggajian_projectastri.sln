@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "penggajian_projectastri", "penggajian_projectastri\penggajian_projectastri.vbproj", "{A2F95462-4BB0-441F-8054-96C3DA7491ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2F95462-4BB0-441F-8054-96C3DA7491ED}.Debug|x86.ActiveCfg = Debug|x86
+		{A2F95462-4BB0-441F-8054-96C3DA7491ED}.Debug|x86.Build.0 = Debug|x86
+		{A2F95462-4BB0-441F-8054-96C3DA7491ED}.Release|x86.ActiveCfg = Release|x86
+		{A2F95462-4BB0-441F-8054-96C3DA7491ED}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
