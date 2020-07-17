@@ -27,6 +27,7 @@ Partial Class FormTambahPegawai
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TxtId = New System.Windows.Forms.TextBox()
         Me.btnJabatan = New System.Windows.Forms.Button()
         Me.txtJabatan = New System.Windows.Forms.ComboBox()
         Me.txtStatus = New System.Windows.Forms.ComboBox()
@@ -47,7 +48,7 @@ Partial Class FormTambahPegawai
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(80, 9)
+        Me.Label1.Location = New System.Drawing.Point(42, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(188, 32)
         Me.Label1.TabIndex = 0
@@ -55,9 +56,9 @@ Partial Class FormTambahPegawai
         '
         'btnSimpan
         '
-        Me.btnSimpan.Location = New System.Drawing.Point(103, 17)
+        Me.btnSimpan.Location = New System.Drawing.Point(41, 15)
         Me.btnSimpan.Name = "btnSimpan"
-        Me.btnSimpan.Size = New System.Drawing.Size(142, 31)
+        Me.btnSimpan.Size = New System.Drawing.Size(189, 31)
         Me.btnSimpan.TabIndex = 12
         Me.btnSimpan.Text = "Simpan"
         Me.btnSimpan.UseVisualStyleBackColor = True
@@ -68,20 +69,21 @@ Partial Class FormTambahPegawai
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(346, 46)
+        Me.Panel1.Size = New System.Drawing.Size(272, 46)
         Me.Panel1.TabIndex = 13
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.btnSimpan)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 293)
+        Me.Panel2.Location = New System.Drawing.Point(0, 292)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(346, 72)
+        Me.Panel2.Size = New System.Drawing.Size(272, 72)
         Me.Panel2.TabIndex = 14
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.TxtId)
         Me.Panel3.Controls.Add(Me.btnJabatan)
         Me.Panel3.Controls.Add(Me.txtJabatan)
         Me.Panel3.Controls.Add(Me.txtStatus)
@@ -96,13 +98,21 @@ Partial Class FormTambahPegawai
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 46)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(346, 247)
+        Me.Panel3.Size = New System.Drawing.Size(272, 246)
         Me.Panel3.TabIndex = 15
+        '
+        'TxtId
+        '
+        Me.TxtId.Location = New System.Drawing.Point(212, 3)
+        Me.TxtId.Name = "TxtId"
+        Me.TxtId.Size = New System.Drawing.Size(10, 21)
+        Me.TxtId.TabIndex = 23
+        Me.TxtId.Visible = False
         '
         'btnJabatan
         '
         Me.btnJabatan.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnJabatan.Location = New System.Drawing.Point(284, 211)
+        Me.btnJabatan.Location = New System.Drawing.Point(201, 210)
         Me.btnJabatan.Name = "btnJabatan"
         Me.btnJabatan.Size = New System.Drawing.Size(24, 23)
         Me.btnJabatan.TabIndex = 22
@@ -114,36 +124,37 @@ Partial Class FormTambahPegawai
         Me.txtJabatan.FormattingEnabled = True
         Me.txtJabatan.Location = New System.Drawing.Point(40, 211)
         Me.txtJabatan.Name = "txtJabatan"
-        Me.txtJabatan.Size = New System.Drawing.Size(238, 23)
+        Me.txtJabatan.Size = New System.Drawing.Size(150, 23)
         Me.txtJabatan.TabIndex = 21
         '
         'txtStatus
         '
         Me.txtStatus.FormattingEnabled = True
+        Me.txtStatus.Items.AddRange(New Object() {"Menikah", "Lajang"})
         Me.txtStatus.Location = New System.Drawing.Point(41, 117)
         Me.txtStatus.Name = "txtStatus"
-        Me.txtStatus.Size = New System.Drawing.Size(268, 23)
+        Me.txtStatus.Size = New System.Drawing.Size(184, 23)
         Me.txtStatus.TabIndex = 20
         '
         'txtAnak
         '
         Me.txtAnak.Location = New System.Drawing.Point(41, 163)
         Me.txtAnak.Name = "txtAnak"
-        Me.txtAnak.Size = New System.Drawing.Size(268, 21)
+        Me.txtAnak.Size = New System.Drawing.Size(184, 21)
         Me.txtAnak.TabIndex = 19
         '
         'txtNama
         '
         Me.txtNama.Location = New System.Drawing.Point(41, 71)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(268, 21)
+        Me.txtNama.Size = New System.Drawing.Size(184, 21)
         Me.txtNama.TabIndex = 18
         '
         'txtNIP
         '
         Me.txtNIP.Location = New System.Drawing.Point(40, 25)
         Me.txtNIP.Name = "txtNIP"
-        Me.txtNIP.Size = New System.Drawing.Size(268, 21)
+        Me.txtNIP.Size = New System.Drawing.Size(185, 21)
         Me.txtNIP.TabIndex = 17
         '
         'Label6
@@ -196,12 +207,15 @@ Partial Class FormTambahPegawai
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(346, 365)
+        Me.ClientSize = New System.Drawing.Size(272, 364)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FormTambahPegawai"
+        Me.ShowIcon = False
         Me.Text = "Tambah Pegawai Baru"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -227,4 +241,5 @@ Partial Class FormTambahPegawai
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents TxtId As System.Windows.Forms.TextBox
 End Class

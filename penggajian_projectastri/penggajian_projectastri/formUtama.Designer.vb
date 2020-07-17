@@ -63,6 +63,7 @@ Partial Class formUtama
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(794, 471)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnKeluar)
         Me.Controls.Add(Me.btnGaji)
         Me.Controls.Add(Me.btnData)
@@ -71,9 +72,8 @@ Partial Class formUtama
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "formUtama"
-        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Utama"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
         Me.ResumeLayout(False)
 
     End Sub
