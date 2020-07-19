@@ -96,12 +96,6 @@
     <Compile Include="FormTambahPegawai.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTambahPenggajian.Designer.vb">
-      <DependentUpon>FormTambahPenggajian.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormTambahPenggajian.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="formUtama.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -144,9 +138,6 @@
     <EmbeddedResource Include="FormTambahPegawai.resx">
       <DependentUpon>FormTambahPegawai.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTambahPenggajian.resx">
-      <DependentUpon>FormTambahPenggajian.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formUtama.resx">
       <DependentUpon>formUtama.vb</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +175,25 @@
     <Content Include="Penggajian_AstriMusidah.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Crystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

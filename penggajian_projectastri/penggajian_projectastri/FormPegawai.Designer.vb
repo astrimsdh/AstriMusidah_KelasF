@@ -22,10 +22,12 @@ Partial Class FormPegawai
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPegawai))
         Me.btnCetak = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.AxCrystalReport2 = New AxCrystal.AxCrystalReport()
         Me.btnKembali = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,6 +40,7 @@ Partial Class FormPegawai
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.AxCrystalReport2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -69,18 +72,28 @@ Partial Class FormPegawai
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(786, 57)
+        Me.Panel1.Size = New System.Drawing.Size(791, 57)
         Me.Panel1.TabIndex = 10
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.AxCrystalReport2)
         Me.Panel2.Controls.Add(Me.btnKembali)
         Me.Panel2.Controls.Add(Me.btnCetak)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 415)
+        Me.Panel2.Location = New System.Drawing.Point(0, 412)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(786, 48)
+        Me.Panel2.Size = New System.Drawing.Size(791, 48)
         Me.Panel2.TabIndex = 11
+        '
+        'AxCrystalReport2
+        '
+        Me.AxCrystalReport2.Enabled = True
+        Me.AxCrystalReport2.Location = New System.Drawing.Point(186, 7)
+        Me.AxCrystalReport2.Name = "AxCrystalReport2"
+        Me.AxCrystalReport2.OcxState = CType(resources.GetObject("AxCrystalReport2.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxCrystalReport2.Size = New System.Drawing.Size(28, 28)
+        Me.AxCrystalReport2.TabIndex = 9
         '
         'btnKembali
         '
@@ -104,7 +117,7 @@ Partial Class FormPegawai
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 57)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(786, 358)
+        Me.Panel3.Size = New System.Drawing.Size(791, 355)
         Me.Panel3.TabIndex = 12
         '
         'Label2
@@ -145,6 +158,7 @@ Partial Class FormPegawai
         Me.btnUbah.TabIndex = 13
         Me.btnUbah.Text = "Ubah"
         Me.btnUbah.UseVisualStyleBackColor = True
+        Me.btnUbah.Visible = False
         '
         'btnHapus
         '
@@ -191,7 +205,7 @@ Partial Class FormPegawai
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(786, 463)
+        Me.ClientSize = New System.Drawing.Size(791, 460)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -206,6 +220,7 @@ Partial Class FormPegawai
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.AxCrystalReport2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -226,4 +241,5 @@ Partial Class FormPegawai
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents btnKembali As System.Windows.Forms.Button
+    Friend WithEvents AxCrystalReport2 As AxCrystal.AxCrystalReport
 End Class

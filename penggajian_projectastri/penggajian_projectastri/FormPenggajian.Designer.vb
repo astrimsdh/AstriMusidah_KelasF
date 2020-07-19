@@ -23,6 +23,26 @@ Partial Class FormPenggajian
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtNama = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnCari = New System.Windows.Forms.Button()
         Me.txtCari = New System.Windows.Forms.TextBox()
@@ -44,6 +64,26 @@ Partial Class FormPenggajian
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.Label13)
+        Me.Panel3.Controls.Add(Me.Label12)
+        Me.Panel3.Controls.Add(Me.Label11)
+        Me.Panel3.Controls.Add(Me.Label9)
+        Me.Panel3.Controls.Add(Me.Label7)
+        Me.Panel3.Controls.Add(Me.TextBox7)
+        Me.Panel3.Controls.Add(Me.TextBox6)
+        Me.Panel3.Controls.Add(Me.TextBox5)
+        Me.Panel3.Controls.Add(Me.TextBox4)
+        Me.Panel3.Controls.Add(Me.TextBox3)
+        Me.Panel3.Controls.Add(Me.TextBox2)
+        Me.Panel3.Controls.Add(Me.TextBox1)
+        Me.Panel3.Controls.Add(Me.DateTimePicker1)
+        Me.Panel3.Controls.Add(Me.ComboBox1)
+        Me.Panel3.Controls.Add(Me.txtNama)
+        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.Label8)
+        Me.Panel3.Controls.Add(Me.Label10)
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.btnCari)
         Me.Panel3.Controls.Add(Me.txtCari)
@@ -55,13 +95,190 @@ Partial Class FormPenggajian
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 57)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(790, 362)
+        Me.Panel3.Size = New System.Drawing.Size(795, 351)
         Me.Panel3.TabIndex = 15
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(19, 244)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(86, 13)
+        Me.Label13.TabIndex = 58
+        Me.Label13.Text = "Tunjangan Anak"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(21, 270)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(53, 13)
+        Me.Label12.TabIndex = 57
+        Me.Label12.Text = "Gaji Kotor"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(19, 296)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(37, 13)
+        Me.Label11.TabIndex = 56
+        Me.Label11.Text = "Pajak "
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(21, 322)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(57, 13)
+        Me.Label9.TabIndex = 55
+        Me.Label9.Text = "Gaji Bersih"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(19, 218)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(77, 13)
+        Me.Label7.TabIndex = 54
+        Me.Label7.Text = "Tunjangan Istri"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox7.Location = New System.Drawing.Point(117, 163)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ReadOnly = True
+        Me.TextBox7.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox7.TabIndex = 53
+        '
+        'TextBox6
+        '
+        Me.TextBox6.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox6.Location = New System.Drawing.Point(117, 189)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
+        Me.TextBox6.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox6.TabIndex = 52
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox5.Location = New System.Drawing.Point(117, 215)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.ReadOnly = True
+        Me.TextBox5.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox5.TabIndex = 51
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox4.Location = New System.Drawing.Point(117, 319)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox4.TabIndex = 50
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox3.Location = New System.Drawing.Point(117, 293)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
+        Me.TextBox3.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox3.TabIndex = 49
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox2.Location = New System.Drawing.Point(117, 267)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
+        Me.TextBox2.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox2.TabIndex = 48
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
+        Me.TextBox1.Location = New System.Drawing.Point(117, 241)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(141, 20)
+        Me.TextBox1.TabIndex = 47
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(117, 137)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(141, 20)
+        Me.DateTimePicker1.TabIndex = 46
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(117, 84)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(141, 21)
+        Me.ComboBox1.TabIndex = 45
+        '
+        'txtNama
+        '
+        Me.txtNama.BackColor = System.Drawing.SystemColors.Window
+        Me.txtNama.Location = New System.Drawing.Point(117, 111)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.ReadOnly = True
+        Me.txtNama.Size = New System.Drawing.Size(141, 20)
+        Me.txtNama.TabIndex = 44
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(19, 192)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(59, 13)
+        Me.Label6.TabIndex = 43
+        Me.Label6.Text = "Gaji Pokok"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(19, 166)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(45, 13)
+        Me.Label5.TabIndex = 42
+        Me.Label5.Text = "Jabatan"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(17, 143)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(79, 13)
+        Me.Label4.TabIndex = 41
+        Me.Label4.Text = "Tanggal Gajian"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(19, 114)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.TabIndex = 40
+        Me.Label8.Text = "Nama"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(17, 87)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(69, 13)
+        Me.Label10.TabIndex = 39
+        Me.Label10.Text = "NIP Pegawai"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(416, 23)
+        Me.Label2.Location = New System.Drawing.Point(432, 19)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(116, 13)
@@ -70,49 +287,48 @@ Partial Class FormPenggajian
         '
         'btnCari
         '
-        Me.btnCari.Location = New System.Drawing.Point(697, 17)
+        Me.btnCari.Location = New System.Drawing.Point(726, 14)
         Me.btnCari.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnCari.Name = "btnCari"
-        Me.btnCari.Size = New System.Drawing.Size(86, 27)
+        Me.btnCari.Size = New System.Drawing.Size(57, 23)
         Me.btnCari.TabIndex = 15
         Me.btnCari.Text = "Cari"
         Me.btnCari.UseVisualStyleBackColor = True
         '
         'txtCari
         '
-        Me.txtCari.Location = New System.Drawing.Point(535, 17)
+        Me.txtCari.Location = New System.Drawing.Point(564, 16)
         Me.txtCari.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.txtCari.Multiline = True
         Me.txtCari.Name = "txtCari"
-        Me.txtCari.Size = New System.Drawing.Size(158, 27)
+        Me.txtCari.Size = New System.Drawing.Size(158, 20)
         Me.txtCari.TabIndex = 14
         '
         'btnUbah
         '
-        Me.btnUbah.Location = New System.Drawing.Point(197, 17)
+        Me.btnUbah.Location = New System.Drawing.Point(181, 42)
         Me.btnUbah.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnUbah.Name = "btnUbah"
-        Me.btnUbah.Size = New System.Drawing.Size(86, 27)
+        Me.btnUbah.Size = New System.Drawing.Size(77, 27)
         Me.btnUbah.TabIndex = 13
         Me.btnUbah.Text = "Ubah"
         Me.btnUbah.UseVisualStyleBackColor = True
         '
         'btnHapus
         '
-        Me.btnHapus.Location = New System.Drawing.Point(107, 17)
+        Me.btnHapus.Location = New System.Drawing.Point(98, 42)
         Me.btnHapus.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnHapus.Name = "btnHapus"
-        Me.btnHapus.Size = New System.Drawing.Size(86, 27)
+        Me.btnHapus.Size = New System.Drawing.Size(78, 27)
         Me.btnHapus.TabIndex = 12
         Me.btnHapus.Text = "Hapus"
         Me.btnHapus.UseVisualStyleBackColor = True
         '
         'btnTambah
         '
-        Me.btnTambah.Location = New System.Drawing.Point(17, 17)
+        Me.btnTambah.Location = New System.Drawing.Point(17, 42)
         Me.btnTambah.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.btnTambah.Name = "btnTambah"
-        Me.btnTambah.Size = New System.Drawing.Size(86, 27)
+        Me.btnTambah.Size = New System.Drawing.Size(77, 27)
         Me.btnTambah.TabIndex = 11
         Me.btnTambah.Text = "Tambah"
         Me.btnTambah.UseVisualStyleBackColor = True
@@ -120,7 +336,7 @@ Partial Class FormPenggajian
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 63)
+        Me.Label1.Location = New System.Drawing.Point(274, 42)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(114, 13)
@@ -130,10 +346,10 @@ Partial Class FormPenggajian
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 82)
+        Me.DataGridView1.Location = New System.Drawing.Point(277, 58)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(769, 267)
+        Me.DataGridView1.Size = New System.Drawing.Size(506, 281)
         Me.DataGridView1.TabIndex = 9
         '
         'Panel2
@@ -141,9 +357,9 @@ Partial Class FormPenggajian
         Me.Panel2.Controls.Add(Me.btnKembali)
         Me.Panel2.Controls.Add(Me.btnCetak)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 419)
+        Me.Panel2.Location = New System.Drawing.Point(0, 408)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(790, 48)
+        Me.Panel2.Size = New System.Drawing.Size(795, 43)
         Me.Panel2.TabIndex = 14
         '
         'btnKembali
@@ -171,7 +387,7 @@ Partial Class FormPenggajian
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(790, 57)
+        Me.Panel1.Size = New System.Drawing.Size(795, 57)
         Me.Panel1.TabIndex = 13
         '
         'Label3
@@ -190,7 +406,7 @@ Partial Class FormPenggajian
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(790, 467)
+        Me.ClientSize = New System.Drawing.Size(795, 451)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -223,4 +439,24 @@ Partial Class FormPenggajian
     Friend WithEvents btnCetak As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtNama As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

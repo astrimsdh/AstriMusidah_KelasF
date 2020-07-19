@@ -40,6 +40,7 @@ Public Class FormPegawai
 
     Private Sub btnUbah_Click(sender As System.Object, e As System.EventArgs) Handles btnUbah.Click
         FormTambahPegawai.Show()
+        FormTambahPegawai.StartPosition = FormStartPosition.CenterScreen
         FormTambahPegawai.btnSimpan.Text = "Ubah"
         FormTambahPegawai.Label1.Text = "Ubah Data"
         FormTambahPegawai.TxtId.Text = DataGridView1.SelectedCells(0).Value
@@ -48,5 +49,12 @@ Public Class FormPegawai
         FormTambahPegawai.txtStatus.Text = DataGridView1.SelectedCells(4).Value
         FormTambahPegawai.txtAnak.Text = DataGridView1.SelectedCells(5).Value
         FormTambahPegawai.txtJabatan.Text = DataGridView1.SelectedCells(6).Value
+    End Sub
+
+    Private Sub btnCetak_Click(sender As System.Object, e As System.EventArgs) Handles btnCetak.Click
+        AxCrystalReport2.ReportFileName = "laporanPegawai.rpt"
+        AxCrystalReport2.WindowState = Crystal.WindowStateConstants.crptMaximized
+        AxCrystalReport2.RetrieveDataFiles()
+        AxCrystalReport2.Action = 1
     End Sub
 End Class
